@@ -14,3 +14,10 @@ const heading = document.createElement('h1');
 heading.textContent = 'Hello, World!';
 
 root.append(title, heading);
+const profileCard = document.querySelector(".profile");
+
+if (profileCard) {
+    profileCard.addEventListener("click", () => {
+        alert("Pranay Reddy - Master’s in Information Systems, graduating December 2025!");
+    });
+}
