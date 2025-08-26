@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  background-color: #2563eb;
   font-family: Arial, sans-serif;
   color: white;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  min-height: 100vh;
 }
 
 .page {
@@ -13,8 +14,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  gap: 12px;
+  gap: 14px;
 }
+
+.row { display: flex; gap: 8px; align-items: center; justify-content: center; }
 
 .card {
   background: #ffffff;
@@ -29,40 +32,25 @@ body {
 .card img {
   border-radius: 50%;
   margin-bottom: 12px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border: 3px solid #2563eb;
 }
 
-.card h2 {
-  margin: 6px 0 10px 0;
-  color: #2563eb;
-}
+.card h2 { margin: 6px 0 10px 0; color: #2563eb; }
 
 input, button {
   font-size: 14px;
   padding: 8px 14px;
   border-radius: 8px;
   border: none;
-  margin: 6px;
+  margin: 6px 0;
 }
 
-input {
-  border: 1px solid #d1d5db;
-  color: #111;
-}
+input { border: 1px solid #d1d5db; color: #111; background: #fff; }
+button { background: #1e40af; color: #fff; cursor: pointer; }
+button:hover { background: #162f74; }
 
-button {
-  background: #1e40af;
-  color: #fff;
-  cursor: pointer;
-}
-
-button:hover { 
-  background: #162f74; 
-}
-
-.result { 
-  margin-top: 12px; 
-  width: 100%; 
-  display: flex; 
-  justify-content: center; 
-}
+.result { margin-top: 12px; width: 100%; display: flex; justify-content: center; }
+.error { color: #fff; background: #b91c1c; padding: 8px 12px; border-radius: 8px; }
