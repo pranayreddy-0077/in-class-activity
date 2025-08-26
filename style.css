@@ -1,67 +1,68 @@
-/* Blue background */
 body {
   margin: 0;
-  padding: 0;
-  background-color: #2563eb; /* full page blue */
+  background-color: #2563eb;
   font-family: Arial, sans-serif;
   color: white;
 }
 
-/* Center the entire page content */
 .page {
+  min-height: 100vh;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center horizontally */
+  align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
-  padding: 20px;
   text-align: center;
+  gap: 12px;
 }
 
-/* Card style */
 .card {
   background: #ffffff;
   color: #000;
   border-radius: 12px;
   padding: 20px;
-  margin: 20px 0;
-  max-width: 400px;
   width: 100%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  max-width: 420px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
 }
 
-/* Avatar inside card */
 .card img {
   border-radius: 50%;
   margin-bottom: 12px;
   border: 3px solid #2563eb;
 }
 
-/* Card heading */
 .card h2 {
-  margin: 0 0 8px 0;
+  margin: 6px 0 10px 0;
   color: #2563eb;
 }
 
-/* Buttons + Inputs */
-button, input {
-  padding: 8px 14px;
-  margin: 6px;
-  border-radius: 6px;
-  border: none;
+input, button {
   font-size: 14px;
-}
-
-button {
-  background-color: #1e40af;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #162f74;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  margin: 6px;
 }
 
 input {
-  border: 1px solid #ccc;
+  border: 1px solid #d1d5db;
+  color: #111;
+}
+
+button {
+  background: #1e40af;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover { 
+  background: #162f74; 
+}
+
+.result { 
+  margin-top: 12px; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
 }
