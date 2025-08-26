@@ -1,47 +1,67 @@
-/* Center everything on page */
+/* Make the whole page blue and center content */
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center;   /* center horizontally */
+  justify-content: flex-start;  /* start from top */
   min-height: 100vh;
-  background-color: #f5f7fa; /* light background */
+  background-color: #2563eb; /* solid blue background */
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif;
+  color: white; /* default text white */
 }
 
 /* Card style */
 .card {
   background: #ffffff;
-  border: 1px solid #ddd;
+  color: #000;
+  border: none;
   border-radius: 12px;
   padding: 20px;
   margin-top: 20px;
-  max-width: 380px;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease;
-}
-
-/* Small hover effect */
-.card:hover {
-  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /* Card content */
 .card img {
   border-radius: 50%;
   margin-bottom: 12px;
-  border: 3px solid #2563eb; /* blue border around avatar */
+  border: 3px solid #2563eb;
 }
 
 .card h2 {
   margin: 0 0 8px 0;
-  color: #2563eb; /* blue for name */
+  color: #2563eb;
 }
 
 .card p {
   margin: 6px 0;
   color: #333;
+}
+
+/* Buttons and inputs centered and styled */
+button, input {
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+button {
+  background-color: #1e40af;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #162f74;
+}
+
+input {
+  border: 1px solid #ccc;
 }
