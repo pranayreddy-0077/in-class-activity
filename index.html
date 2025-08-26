@@ -103,15 +103,16 @@
                 console.log(response);
                if (!response.ok) throw new Error(response.status === 404 ? 'User not found' : response.status + ': ' + response.statusText);
                 const apiData = await response.json();
-                result.innerHTML = `
-                                     <h2>${apiData.name || "No Name"}</h2>
-                                      <!-- ${apiData.bio ? `<p><strong>Bio:</strong> ${apiData.bio}</p>` : ""} -->
-                                      <img src="${apiData.avatar_url}" width="100" />
-                                      <p><strong>Username:</strong> ${apiData.login}</p>
-                                      <p><strong>Public Repos:</strong> ${apiData.public_repos}</p>
-                                      <p><a href="${apiData.html_url}" target="_blank">Profile Link</a></p>
-                                      <h2>${apiData.location ? `Location: ${apiData.location}` : "Location not available"}</h2>
-                 `;
+               result.innerHTML = `
+   <div class="card">
+      <h2>${apiData.name || "No Name"}</h2>
+      <img src="${apiData.avatar_url}" width="100" />
+      <p><strong>Username:</strong> ${apiData.login}</p>
+      <p><strong>Public Repos:</strong> ${apiData.public_repos}</p>
+      <p><a href="${apiData.html_url}" target="_blank">Profile Link</a></p>
+      <p>${apiData.location ? `Location: ${apiData.location}` : "Location not available"}</p>
+   </div>
+`;
             } catch (error) {
                 result.innerHTML = `<p style="color:red;">${error.message}</p>`;
             }
