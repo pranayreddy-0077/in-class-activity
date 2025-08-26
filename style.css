@@ -1,49 +1,49 @@
-/* Make the whole page blue and center content */
+/* Blue background */
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #2563eb; /* full page blue */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Center the entire page content */
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;   /* center horizontally */
-  justify-content: flex-start;  /* start from top */
+  justify-content: flex-start;
   min-height: 100vh;
-  background-color: #2563eb; /* solid blue background */
-  margin: 0;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  color: white; /* default text white */
+  text-align: center;
 }
 
 /* Card style */
 .card {
   background: #ffffff;
   color: #000;
-  border: none;
   border-radius: 12px;
   padding: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   max-width: 400px;
   width: 100%;
-  text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Card content */
+/* Avatar inside card */
 .card img {
   border-radius: 50%;
   margin-bottom: 12px;
   border: 3px solid #2563eb;
 }
 
+/* Card heading */
 .card h2 {
   margin: 0 0 8px 0;
   color: #2563eb;
 }
 
-.card p {
-  margin: 6px 0;
-  color: #333;
-}
-
-/* Buttons and inputs centered and styled */
+/* Buttons + Inputs */
 button, input {
   padding: 8px 14px;
   margin: 6px;
