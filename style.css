@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #222;
-  background: linear-gradient(135deg, #e0f7fa 0%, #e1bee7 100%);
+  background-color: #dbeeff; /* soft light blue */
   min-height: 100vh;
 }
 
@@ -77,3 +77,4 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+
