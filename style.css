@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #222;
-  background-color: #dbeeff; /* soft light blue */
+  background-color: #f0f8ff; /* light pastel blue */
   min-height: 100vh;
 }
 
@@ -77,4 +77,5 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+
 
